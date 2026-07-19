@@ -10,12 +10,20 @@
   --white: #ffffff;
   --cream: #efe7dc;
   --ink: #1c2b3a;
-  --blue: #7b9d88;
-  --blue-deep: #5f7a66;
-  --blue-pale: #dce4d7;
-  --yellow: #f6c94c;
-  --pink: #ef9bc0;
-  --pink-pale: #fbe3ee;
+
+  /* Sage palette (dark → light) used as the new accent range */
+  --sage-dark: #5f7a66;
+  --sage: #7b9d88;
+  --sage-pale: #e7efe8;
+
+  /* keep legacy names for compatibility across the stylesheet */
+  --blue: var(--sage);
+  --blue-deep: var(--sage-dark);
+  --blue-pale: var(--sage-pale);
+  --yellow: var(--sage);
+  --pink: var(--sage);
+  --pink-pale: var(--sage-pale);
+
   --line: #1c2b3a;
 
   --stripe-width: 14px;
@@ -320,15 +328,16 @@ section {
 }
 
 .tag--methods {
-  background: var(--pink-pale);
+  background: var(--sage-dark);
+  color: var(--white);
 }
 
 .tag--tools {
-  background: var(--blue-pale);
+  background: var(--sage);
 }
 
 .tag--accent {
-  background: var(--yellow);
+  background: var(--sage-pale);
 }
 
 /* ---------- About ---------- */
