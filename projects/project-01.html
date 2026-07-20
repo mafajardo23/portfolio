@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- UPDATE: real project title -->
-<title>[ Project Title ] — Maria Fajardo</title>
+<title>Ollie AI Helper — Maria Fajardo</title>
 <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
@@ -23,31 +22,31 @@
 
 <!-- ============ PROJECT HERO ============ -->
 <section class="project-hero">
-  <!-- UPDATE: role / team / timeframe -->
-  <p class="eyebrow">[ UPDATE: e.g. Case Study · Interaction Design · Spring 2026 ]</p>
-  <h1>[ Project Title ]</h1>
+  <p class="eyebrow">Case Study · UX Research & Content Design · Summer 2026</p>
+  <h1>Ollie AI Helper</h1>
   <p class="project-summary">
-    [ UPDATE: one or two sentence summary — what the project is, who it's for,
-    and the core problem it solves. This is the line a recruiter reads before
-    deciding whether to keep scrolling. ]
+    100+ users log into the OTIF performance dashboard daily with no self-service support —
+    every question ends in a support ticket. I designed Ollie, an AI-powered chatbot grounded
+    in user research, to reduce friction and help users understand a complex rules-based system
+    on their own terms.
   </p>
 
   <div class="project-meta-row">
     <div class="meta-item">
       <h4>Role</h4>
-      <p>[ UPDATE ]</p>
+      <p>UX Researcher, Content Designer, Conversational UI Designer</p>
     </div>
     <div class="meta-item">
       <h4>Timeline</h4>
-      <p>[ UPDATE ]</p>
+      <p>Summer 2026 (ongoing)</p>
     </div>
     <div class="meta-item">
       <h4>Team</h4>
-      <p>[ UPDATE ]</p>
+      <p>Innovation & Automation, IT & Digital Solutions — Smurfit Westrock</p>
     </div>
     <div class="meta-item">
       <h4>Tools</h4>
-      <p>[ UPDATE ]</p>
+      <p>Palantir AIP, Palantir Foundry, user interviews, content mapping</p>
     </div>
   </div>
 </section>
@@ -55,15 +54,13 @@
 <!-- ============ HERO MEDIA ============ -->
 <div class="project-media">
   <div class="media-box">
-    <!-- UPDATE: replace with <img src="images/project-hero.png" alt="..." /> or a <video> -->
-    <span class="placeholder-label">[ hero image / video of final design ]</span>
+    <span class="placeholder-label">[ Ollie chatbot interface / OTIF dashboard screenshot ]</span>
   </div>
 </div>
 
 <!-- ============ BODY ============ -->
 <div class="project-body">
 
-  <!-- Sticky in-page table of contents. Update hrefs if you rename sections below. -->
   <nav class="project-toc">
     <a href="#overview">Overview</a>
     <a href="#problem">Problem</a>
@@ -76,46 +73,167 @@
   <div class="project-content">
 
     <h2 id="overview">Overview</h2>
-    <p>[ UPDATE: context — what prompted this project, and the goal. ]</p>
+    <p>
+      The OTIF (On-Time and In-Full) dashboard tracks delivery performance across millions of
+      orders for a global packaging company. With over 100 users logging in every day,
+      plant managers, customer service managers, senior leaders, and analysts, questions and
+      confusion were constant. There was no documentation, no onboarding, and no way for users
+      to get answers without opening a support ticket or calling a colleague.
+    </p>
+    <p>
+      I was brought on as an IT and Digital Solutions intern on the Innovation and Automation
+      team to build an FAQ document. What started as a documentation task quickly became a
+      full UX research and content design project, and ultimately, the foundation for Ollie,
+      an AI-powered self-service chatbot built on Palantir AIP.
+    </p>
 
     <h2 id="problem">Problem</h2>
-    <p>[ UPDATE: the specific user or business problem you were solving. Include
-      research findings, pain points, or constraints that shaped the direction. ]</p>
+    <p>
+      Users were confused — but not for the reasons anyone expected. Through incident ticket
+      analysis, user interviews, and a review of the rules documentation, I identified four
+      core problems:
+    </p>
+    <ul>
+      <li>
+        <strong>The rules, not the interface, were the real problem.</strong> Users could
+        navigate the dashboard fine. What they could not understand was why the system made
+        the decisions it did. A score would show LATE and no one could explain why.
+      </li>
+      <li>
+        <strong>Two completely different user mental models.</strong> Business users asked
+        "why does my score look wrong?" Technical users asked "why did the system behave
+        this way?" The dashboard treated them identically.
+      </li>
+      <li>
+        <strong>Overrides were the biggest recurring pain point.</strong> Multiple incident
+        tickets from multiple user types all traced back to the same misunderstanding: users
+        did not know that override acts as a toggle, locks the field, and prevents future
+        engine updates.
+      </li>
+      <li>
+        <strong>Self-service was nonexistent.</strong> Nearly every answer in the support
+        queue ended with "open a support ticket." There was no way for users to help
+        themselves.
+      </li>
+    </ul>
+
     <div class="media-box">
-      <span class="placeholder-label">[ research artifact / journey map / etc. ]</span>
+      <span class="placeholder-label">[ affinity map / incident ticket analysis / user journey ]</span>
     </div>
 
     <h2 id="process">Process</h2>
-    <p>[ UPDATE: walk through your process — wireframes, iterations, testing.
-      Show the messy middle, not just the polished output. ]</p>
+    <p>
+      I approached this project the way a UX researcher would, even though the original brief
+      was just "write an FAQ." Every step was grounded in real user data.
+    </p>
     <ul>
-      <li>[ UPDATE: e.g. Conducted N user interviews to understand X ]</li>
-      <li>[ UPDATE: e.g. Sketched N concepts, narrowed to N based on Y ]</li>
-      <li>[ UPDATE: e.g. Tested prototype with N participants, found Z ]</li>
+      <li>
+        <strong>Secondary research:</strong> Reviewed the OTIF Rules documentation, a
+        technical rule engine specification, and 14 incident support tickets to identify
+        recurring failure patterns and knowledge gaps.
+      </li>
+      <li>
+        <strong>User interviews:</strong> Conducted 4 interviews with internal stakeholders
+        who work closely with the dashboard. Designed an interview guide focused on surfacing
+        user pain points, mental models, and the questions real users ask most often.
+      </li>
+      <li>
+        <strong>Content categorization:</strong> Organized over 100 FAQ entries by user type
+        (business vs. technical) and complexity (simple to complex), applying information
+        architecture principles to create a navigable, layered knowledge base.
+      </li>
+      <li>
+        <strong>Hallucination testing:</strong> Designed a test suite for the AI chatbot
+        covering direct retrieval, paraphrased questions, multi-step reasoning, and
+        hallucination traps — questions the document does not answer, where the chatbot
+        should redirect rather than guess.
+      </li>
+      <li>
+        <strong>Demo user stories:</strong> Created persona-based user stories for a CSM
+        and a senior leader to demonstrate Ollie in a stakeholder presentation, showing both
+        successful answers and appropriate fallback behavior.
+      </li>
     </ul>
+
     <div class="media-box">
-      <span class="placeholder-label">[ wireframes / iteration snapshots ]</span>
+      <span class="placeholder-label">[ interview guide / FAQ categorization / content map ]</span>
     </div>
 
     <h2 id="solution">Solution</h2>
-    <p>[ UPDATE: the final design — what it does and why it works. ]</p>
+    <p>
+      Ollie is an AI-powered chatbot built on Palantir AIP, grounded entirely in the OTIF
+      FAQ document. It answers questions from both business and technical users in plain
+      language, guides users through the dashboard rather than just answering abstractly,
+      and redirects to a support ticket when the answer is genuinely outside its knowledge.
+    </p>
+    <p>
+      The FAQ document itself — the knowledge base Ollie runs on — was designed with two
+      principles from HCI in mind. Progressive Disclosure: surfacing simple answers first
+      and revealing complexity only when relevant. Information Scent: writing questions
+      in the exact language users would use, not the language of the system.
+    </p>
+    <p>
+      Ollie was designed to teach users the platform while answering their questions.
+      Instead of just saying "yes, the SLEA tab has that information," it guides users
+      through the steps — building familiarity and confidence over time.
+    </p>
+
     <div class="media-box">
-      <span class="placeholder-label">[ final UI screens / prototype clip ]</span>
+      <span class="placeholder-label">[ Ollie chatbot demo / final UI screens ]</span>
     </div>
 
     <h2 id="outcomes">Outcomes</h2>
-    <p>[ UPDATE: impact — metrics, feedback, what shipped or what you'd propose next. ]</p>
+    <p>
+      The project is ongoing, with user interviews and chatbot refinement continuing into
+      the second half of the summer. Early outcomes include:
+    </p>
+    <ul>
+      <li>
+        A structured FAQ document with 100+ entries organized by user type and complexity,
+        grounded in rules documentation, incident tickets, and primary user research.
+      </li>
+      <li>
+        A working AI chatbot demo presented to internal stakeholders, demonstrating both
+        successful self-service answers and appropriate fallback behavior for out-of-scope
+        questions.
+      </li>
+      <li>
+        A set of key UX findings shared with the team's UX designer, identifying override
+        confusion, missing progressive disclosure, and weak information scent as the
+        highest-priority usability gaps in the dashboard.
+      </li>
+      <li>
+        A reusable interview guide and test suite that can support future research and
+        chatbot evaluation as the user base grows beyond 100 daily users.
+      </li>
+    </ul>
 
     <h2 id="reflection">Reflection</h2>
-    <p>[ UPDATE: what you learned, what you'd do differently, how it shaped your
-      thinking as a designer. ]</p>
+    <p>
+      This project taught me that documentation is never just documentation. Every FAQ entry
+      was a design decision: what language to use, how much to explain, when to simplify
+      and when complexity was necessary. The act of writing clear answers forced me to
+      understand the system deeply enough to translate it for someone who did not.
+    </p>
+    <p>
+      I also learned that self-service tools live or die by trust. Ollie had to know when
+      not to answer, redirecting confidently to a support ticket is a feature, not a
+      failure. Designing for the boundaries of an AI system is just as important as designing
+      for what it can do.
+    </p>
+    <p>
+      If I were to continue this project, I would focus on the dashboard itself, specifically
+      the override experience, which generated more confusion than any other feature. A small
+      interaction design change, like a confirmation step that shows users the current value
+      and the value it will flip to, could eliminate the most common category of support
+      tickets entirely.
+    </p>
 
   </div>
 </div>
 
 <div class="project-nav-footer">
   <a href="../index.html#work" class="btn">← back to all work</a>
-  <!-- UPDATE: link to the next case study once you have more than one -->
   <a href="project-template.html" class="btn btn-primary">next project →</a>
 </div>
 
