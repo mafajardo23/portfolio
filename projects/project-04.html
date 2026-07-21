@@ -3,9 +3,36 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- UPDATE: real project title -->
-<title>[ Project Title ] — Maria Fajardo</title>
+<title>Design Sprints — Maria Fajardo</title>
 <link rel="stylesheet" href="../style.css" />
+<style>
+  /* TEMP: link-affordance styling. Consider moving this into style.css
+     since the same pattern now appears on more than one project page. */
+  .case-link {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 0.4rem;
+  }
+  .case-link::after {
+    content: " →";
+    color: #C8154B;
+    display: inline-block;
+    transition: transform 0.15s ease;
+  }
+  .case-link:hover {
+    text-decoration: underline;
+  }
+  .case-link:hover::after {
+    transform: translateX(3px);
+  }
+  .sprint-block {
+    border-left: 2px solid #C8154B;
+    padding-left: 1.2rem;
+    margin-bottom: 2rem;
+  }
+</style>
 </head>
 <body>
 
@@ -23,31 +50,31 @@
 
 <!-- ============ PROJECT HERO ============ -->
 <section class="project-hero">
-  <!-- UPDATE: role / team / timeframe -->
-  <p class="eyebrow">[ UPDATE: e.g. Case Study · Interaction Design · Spring 2026 ]</p>
-  <h1>[ Project Title ]</h1>
+  <p class="eyebrow">Coursework · Human-Computer Interaction · Four Design Sprints</p>
+  <h1>Design Sprints</h1>
   <p class="project-summary">
-    [ UPDATE: one or two sentence summary — what the project is, who it's for,
-    and the core problem it solves. This is the line a recruiter reads before
-    deciding whether to keep scrolling. ]
+    Four short design sprints from a semester of Human-Computer Interaction
+    coursework, each one a fast needfinding-to-prototype cycle applied to a
+    different medium: a multi-device website redesign, a data visualization,
+    a VR experience, and a physical-digital hybrid prototype.
   </p>
 
   <div class="project-meta-row">
     <div class="meta-item">
       <h4>Role</h4>
-      <p>[ UPDATE ]</p>
+      <p>Designer &amp; Researcher, team-based sprints</p>
     </div>
     <div class="meta-item">
       <h4>Timeline</h4>
-      <p>[ UPDATE ]</p>
+      <p>Fall 2025</p>
     </div>
     <div class="meta-item">
       <h4>Team</h4>
-      <p>[ UPDATE ]</p>
+      <p>Small teams, 2-4 classmates per sprint</p>
     </div>
     <div class="meta-item">
       <h4>Tools</h4>
-      <p>[ UPDATE ]</p>
+      <p>Figma, Unity, paper and physical prototyping, Five Design Sheet method</p>
     </div>
   </div>
 </section>
@@ -55,68 +82,197 @@
 <!-- ============ HERO MEDIA ============ -->
 <div class="project-media">
   <div class="media-box">
-    <!-- UPDATE: replace with <img src="images/project-hero.png" alt="..." /> or a <video> -->
-    <span class="placeholder-label">[ hero image / video of final design ]</span>
+    <!-- UPDATE: replace with a collage or grid of one representative shot from each sprint -->
+    <span class="placeholder-label">[ hero image: one shot from each of the four sprints ]</span>
   </div>
 </div>
 
 <!-- ============ BODY ============ -->
 <div class="project-body">
 
-  <!-- Sticky in-page table of contents. Update hrefs if you rename sections below. -->
   <nav class="project-toc">
     <a href="#overview">Overview</a>
-    <a href="#problem">Problem</a>
-    <a href="#process">Process</a>
-    <a href="#solution">Solution</a>
-    <a href="#outcomes">Outcomes</a>
+    <a href="#sprint-1">Sprint 1</a>
+    <a href="#sprint-2">Sprint 2</a>
+    <a href="#sprint-3">Sprint 3</a>
+    <a href="#sprint-4">Sprint 4</a>
     <a href="#reflection">Reflection</a>
   </nav>
 
   <div class="project-content">
 
     <h2 id="overview">Overview</h2>
-    <p>[ UPDATE: context — what prompted this project, and the goal. ]</p>
+    <p>
+      These four sprints came out of one semester of Human-Computer
+      Interaction coursework, and I'm grouping them together because the
+      thread connecting them matters more than any single one on its own.
+      Each sprint started with a real constraint, an existing local
+      business, a public dataset, an unfamiliar medium, a classmate's idea,
+      and moved through the same basic loop: understand the user, sketch
+      fast, test on paper or in a rough prototype, and revise based on what
+      actually confused people. What changed each time was the medium:
+      screens across device sizes, data visualization, an immersive VR
+      world, and a physical object paired with a phone. Working through
+      that same process across that many mediums in one semester taught me
+      more about where design thinking actually holds up than any single
+      deep project could have.
+    </p>
 
-    <h2 id="problem">Problem</h2>
-    <p>[ UPDATE: the specific user or business problem you were solving. Include
-      research findings, pain points, or constraints that shaped the direction. ]</p>
+    <h2 id="sprint-1">Sprint 1: Design for Dimensions</h2>
+    <div class="sprint-block">
+      <p>
+        <strong>Challenge:</strong> Redesign the website for Knotty &amp;
+        Board, a real furniture and interior design store in Davidson, NC,
+        so it works across a laptop, a smartwatch, and a large interactive
+        display, not just a single screen size.
+      </p>
+      <p>
+        <strong>Approach:</strong> We built two personas grounded in the
+        store's likely customers, a busy new homeowner and an Airbnb host
+        furnishing a rental, then sketched 30 concepts across the three
+        device sizes before narrowing down. Paper prototypes went through
+        two rounds of testing, first with classmates, then a full class
+        demo, and each round surfaced specific affordance problems: an
+        unlabeled chat button, a design gallery that didn't look clickable,
+        a keyboard that would have been too large on the big display.
+      </p>
+      <p>
+        <strong>Outcome:</strong> The final prototype gave each device a
+        role instead of shrinking the same design down to fit. The watch
+        kept only quick actions like calling the store or checking an
+        order. The large display added an interactive, zoomable map and a
+        chatbot. The laptop stayed closest to a traditional shopping
+        experience, just decluttered.
+      </p>
+      <a class="case-link" href="https://mariafajardo.dcreate.domains/uncategorized/design-sprint-1-design-for-dimensions/" target="_blank" rel="noopener">Read the full Design Sprint #1 write-up</a>
+      <!-- UPDATE: add link to this post on your HCI course WordPress portfolio -->
+    </div>
     <div class="media-box">
-      <span class="placeholder-label">[ research artifact / journey map / etc. ]</span>
+      <!-- UPDATE: personas, sketches, or the multi-device paper prototype -->
+      <span class="placeholder-label">[ personas + multi-device sketches ]</span>
     </div>
 
-    <h2 id="process">Process</h2>
-    <p>[ UPDATE: walk through your process — wireframes, iterations, testing.
-      Show the messy middle, not just the polished output. ]</p>
-    <ul>
-      <li>[ UPDATE: e.g. Conducted N user interviews to understand X ]</li>
-      <li>[ UPDATE: e.g. Sketched N concepts, narrowed to N based on Y ]</li>
-      <li>[ UPDATE: e.g. Tested prototype with N participants, found Z ]</li>
-    </ul>
+    <h2 id="sprint-2">Sprint 2: Visualizing Coffee Data</h2>
+    <div class="sprint-block">
+      <p>
+        <strong>Challenge:</strong> Turn a public coffee quality dataset
+        (CORGIS, 2010 to 2018, 32 countries) into one analytical
+        visualization and one persuasive one, working with teammates Kyle,
+        Kwasi, and Jordan.
+      </p>
+      <p>
+        <strong>Approach:</strong> We used the Five Design Sheet method to
+        iterate from broad brainstorming to a final design. The analytical
+        piece became a choropleth map of average coffee quality by
+        country, paired with a bar chart comparing scores by production
+        owner and a pie chart of production volume. For the persuasive
+        piece, we built a similarity score: a five-dimension flavor
+        profile (aroma, aftertaste, sweetness, body, acidity) that a user
+        could set with sliders, compared against each country's coffee
+        profile using Euclidean distance, then visualized on an
+        interactive 3D globe.
+      </p>
+      <p>
+        <strong>Outcome:</strong> Feedback from classmates and our
+        professor pushed the accessibility of the visualizations
+        specifically: replacing a blue gradient with distinct,
+        colorblind-friendly categories, and bucketing continuous scores
+        instead of using a smooth gradient that was hard to read precisely.
+      </p>
+      <a class="case-link" href="https://mariafajardo.dcreate.domains/uncategorized/design-sprint-2-exploring-the-world-of-coffee-through-data-visualization/" target="_blank" rel="noopener">Read the full Design Sprint #2 write-up</a>
+      <!-- UPDATE: add link to this post on your HCI course WordPress portfolio -->
+    </div>
     <div class="media-box">
-      <span class="placeholder-label">[ wireframes / iteration snapshots ]</span>
+      <!-- UPDATE: choropleth map, bar/pie charts, or the 3D globe visualization -->
+      <span class="placeholder-label">[ coffee data visualizations: map, charts, globe ]</span>
     </div>
 
-    <h2 id="solution">Solution</h2>
-    <p>[ UPDATE: the final design — what it does and why it works. ]</p>
+    <h2 id="sprint-3">Sprint 3: Design for Another World</h2>
+    <div class="sprint-block">
+      <p>
+        <strong>Challenge:</strong> Design an immersive VR experience set
+        in an unfamiliar world, while avoiding the two settings almost
+        everyone defaults to: space, or a zen garden.
+      </p>
+      <p>
+        <strong>Approach:</strong> We grounded the concept in MIT Media Lab
+        research on VR and relaxation, and landed on an underwater world
+        built in Unity, navigable through head tracking and a center
+        screen reticle. Designing for an extreme user, someone with
+        thalassophobia, a fear of large or deep bodies of water, shaped a
+        real decision: we kept a visible light source toward the surface
+        at all times so users at the ocean floor never lost that reference
+        point.
+      </p>
+      <p>
+        <strong>Outcome:</strong> In-class testing surfaced a UI feedback
+        gap. Users pointing at a navigation arrow had no way to tell if it
+        registered, so we added a color change and a growing animation to
+        the reticle to confirm the interaction was working.
+      </p>
+      <a class="case-link" href="https://mariafajardo.dcreate.domains/uncategorized/design-for-another-world-underwater-vr/" target="_blank" rel="noopener">Read the full Design Sprint #3 write-up</a>
+      <!-- UPDATE: add link to this post on your HCI course WordPress portfolio -->
+    </div>
     <div class="media-box">
-      <span class="placeholder-label">[ final UI screens / prototype clip ]</span>
+      <!-- UPDATE: screenshots or a clip of the Unity underwater VR build -->
+      <span class="placeholder-label">[ underwater VR world: screenshots or demo clip ]</span>
     </div>
 
-    <h2 id="outcomes">Outcomes</h2>
-    <p>[ UPDATE: impact — metrics, feedback, what shipped or what you'd propose next. ]</p>
+    <h2 id="sprint-4">Sprint 4: Redesign and Extend</h2>
+    <div class="sprint-block">
+      <p>
+        <strong>Challenge:</strong> Take a classmate's kiosk concept for
+        Knotty &amp; Board, a touchscreen where customers could drag
+        furniture into a floor plan, and extend it into something new.
+      </p>
+      <p>
+        <strong>Approach:</strong> Needfinding interviews with four people
+        surfaced the actual problem: users were treating floor planning
+        and decorating as one task, which added unnecessary cognitive
+        load. We split them apart and built a low-fidelity, cardboard
+        physical dashboard for arranging a room's layout, paired with a
+        phone showing a matching 3D view, so the spatial planning step
+        could happen before anyone had to think about specific furniture.
+      </p>
+      <p>
+        <strong>Outcome:</strong> Testing surfaced a genuine open question
+        rather than a clean answer: some users wanted abstract blocks for
+        layout, others wanted literal furniture representations from the
+        first interaction. That tension, not a bug to fix but a real
+        product decision to make with more data, was the most useful
+        finding of the sprint.
+      </p>
+      <a class="case-link" href="https://mariafajardo.dcreate.domains/uncategorized/design-sprint-4-re-design-and-extend/" target="_blank" rel="noopener">Read the full Design Sprint #4 write-up</a>
+      <!-- UPDATE: add link to this post on your HCI course WordPress portfolio -->
+    </div>
+    <div class="media-box">
+      <!-- UPDATE: photos of the cardboard dashboard prototype and phone mockup -->
+      <span class="placeholder-label">[ physical dashboard prototype photos ]</span>
+    </div>
 
     <h2 id="reflection">Reflection</h2>
-    <p>[ UPDATE: what you learned, what you'd do differently, how it shaped your
-      thinking as a designer. ]</p>
+    <p>
+      Doing four sprints back to back, each in a different medium, made the
+      shared process more visible to me than any single project would
+      have. Needfinding looked different every time, personas for a
+      website, a public dataset instead of interviews, an extreme user
+      consideration for VR, four short interviews for the physical
+      dashboard, but it always came first, and it always changed the
+      direction. The other constant was testing early with something
+      rough. A cardboard box and paper cutouts told us as much about the
+      floor-planning idea as the Figma prototype told us about Knotty &amp;
+      Board's website. That's probably the biggest thing I took from this
+      semester: the medium changes, but showing someone a rough version of
+      the thing, before it's precious, is what actually moves a design
+      forward.
+    </p>
 
   </div>
 </div>
 
 <div class="project-nav-footer">
   <a href="../index.html#work" class="btn">← back to all work</a>
-  <!-- UPDATE: link to the next case study once you have more than one -->
-  <a href="project-template.html" class="btn btn-primary">next project →</a>
+  <a href="sportspark.html" class="btn btn-primary">next project →</a>
 </div>
 
 </body>
