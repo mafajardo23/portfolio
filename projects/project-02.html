@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- UPDATE: real project title -->
-<title>[ Project Title ] — Maria Fajardo</title>
+<title>SportSpark — Maria Fajardo</title>
 <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
@@ -23,31 +22,32 @@
 
 <!-- ============ PROJECT HERO ============ -->
 <section class="project-hero">
-  <!-- UPDATE: role / team / timeframe -->
-  <p class="eyebrow">[ UPDATE: e.g. Case Study · Interaction Design · Spring 2026 ]</p>
-  <h1>[ Project Title ]</h1>
+  <p class="eyebrow">Case Study · UX/UI Design · Mobile App Redesign</p>
+  <h1>SportSpark</h1>
   <p class="project-summary">
-    [ UPDATE: one or two sentence summary — what the project is, who it's for,
-    and the core problem it solves. This is the line a recruiter reads before
-    deciding whether to keep scrolling. ]
+    SportSpark is a mobile journaling and peer-support app built for college
+    athletes' mental health. I audited the app's first version, redesigned
+    its onboarding, iconography, check-in surveys, and navigation using UX
+    research, and worked with the development team to ship the update to
+    the App Store.
   </p>
 
   <div class="project-meta-row">
     <div class="meta-item">
       <h4>Role</h4>
-      <p>[ UPDATE ]</p>
+      <p>UX/UI Designer, end-to-end audit and redesign</p>
     </div>
     <div class="meta-item">
       <h4>Timeline</h4>
-      <p>[ UPDATE ]</p>
+      <p> May 2025 – Nov 2025</p>
     </div>
     <div class="meta-item">
       <h4>Team</h4>
-      <p>[ UPDATE ]</p>
+      <p>Solo designer, in collaboration with SportSpark's founding/dev team</p>
     </div>
     <div class="meta-item">
       <h4>Tools</h4>
-      <p>[ UPDATE ]</p>
+      <p>Figma, TestFlight, Canva</p>
     </div>
   </div>
 </section>
@@ -55,15 +55,14 @@
 <!-- ============ HERO MEDIA ============ -->
 <div class="project-media">
   <div class="media-box">
-    <!-- UPDATE: replace with <img src="images/project-hero.png" alt="..." /> or a <video> -->
-    <span class="placeholder-label">[ hero image / video of final design ]</span>
+    <!-- UPDATE: replace with hero shot of final onboarding/home screens, e.g. <img src="images/sportspark-hero.png" alt="SportSpark onboarding and home screen redesign" /> -->
+    <span class="placeholder-label">[ hero image: final onboarding + home screen ]</span>
   </div>
 </div>
 
 <!-- ============ BODY ============ -->
 <div class="project-body">
 
-  <!-- Sticky in-page table of contents. Update hrefs if you rename sections below. -->
   <nav class="project-toc">
     <a href="#overview">Overview</a>
     <a href="#problem">Problem</a>
@@ -76,46 +75,111 @@
   <div class="project-content">
 
     <h2 id="overview">Overview</h2>
-    <p>[ UPDATE: context — what prompted this project, and the goal. ]</p>
+    <p>
+      SportSpark started as a working app already in TestFlight, built by two college athletes and a small, international dev team.  Its goal: give college athletes a
+      private space to check in on their mental health and connect with
+      teammates navigating similar pressures: homesickness, performance
+      anxiety, body image, injury recovery. I joined as design lead on a
+      full usability audit and redesign, tasked with taking the app from a
+      functional first draft to something that felt trustworthy, intuitive,
+      and genuinely usable for someone reaching for their phone on a hard day.
+    </p>
 
     <h2 id="problem">Problem</h2>
-    <p>[ UPDATE: the specific user or business problem you were solving. Include
-      research findings, pain points, or constraints that shaped the direction. ]</p>
+    <p>
+      Testing the first version surfaced a pattern: almost every screen
+      asked a stressed user to do a small amount of extra interpretive
+      work, and for a wellness app, that friction compounds. Research on
+      app abandonment suggests a meaningful share of users give up
+      entirely on an app that's too slow to figure out or too complicated,
+      and first impressions matter most in the first few screens.
+      Specifically, the audit turned up:
+    </p>
+    <ul>
+      <li>An onboarding flow that didn't establish what the app was or why to trust it before asking for personal information</li>
+      <li>Iconography built on emoji, which read inconsistently across users and clashed with the wellness tone the app needed</li>
+      <li>Check-in surveys mixing emoji scales with wide 1-10 sliders, adding ambiguity to already-sensitive questions</li>
+      <li>Bottom navigation icons that were easy to misread: the speech bubble read as direct messaging rather than community, and the journal icon looked like a news feed</li>
+      <li>A journaling section with no lightweight way to just write, and repeat prompts that made past entries hard to relocate</li>
+    </ul>
     <div class="media-box">
-      <span class="placeholder-label">[ research artifact / journey map / etc. ]</span>
+      <!-- UPDATE: side-by-side of original emoji icons/survey vs. flagged usability issues -->
+      <span class="placeholder-label">[ audit findings: original icons, surveys, and nav ]</span>
     </div>
 
     <h2 id="process">Process</h2>
-    <p>[ UPDATE: walk through your process — wireframes, iterations, testing.
-      Show the messy middle, not just the polished output. ]</p>
+    <p>
+      Because the app deals with a sensitive audience, I wanted every
+      recommendation to be grounded in something more than personal
+      preference. I pulled in research from Nielsen Norman Group on icon
+      usability, the APA on survey length in wellness apps, the Journal of
+      Medical Internet Research on labeled versus numeric scales, and a
+      MeasuringU/Toepoel &amp; Funke comparison of sliders against Likert
+      scales, then used that research to make the case for each change to
+      the dev team.
+    </p>
     <ul>
-      <li>[ UPDATE: e.g. Conducted N user interviews to understand X ]</li>
-      <li>[ UPDATE: e.g. Sketched N concepts, narrowed to N based on Y ]</li>
-      <li>[ UPDATE: e.g. Tested prototype with N participants, found Z ]</li>
+      <li>Audited the existing TestFlight build screen by screen against usability heuristics, flagging friction points before proposing fixes</li>
+      <li>Rebuilt onboarding to introduce the app's purpose and a trust-building tagline up front, added a progress indicator to the multi-step signup, and used a randomized username generator so users wouldn't stall on a small decision</li>
+      <li>Replaced emoji icons with a custom system: tested a "5-second rule" (if a concept takes a designer more than five seconds to picture as an icon, it's too abstract to force into one) and prototyped four visual directions (clinical, simple, artistic, humanistic) before landing on a simple/humanistic hybrid for topics like injury, stress, anxiety, and nutrition</li>
+      <li>Redesigned check-in surveys around 5-point labeled Likert scales instead of emoji and wide numeric sliders, with wording tailored to each question (sleep quality, energy, mood, soreness, anxiety) and the option to skip any question</li>
+      <li>Reworked the bottom navigation icons, swapping the speech bubble for a community icon and the newspaper-style icon for an open book, so each better matched what it actually led to</li>
+      <li>Reorganized the journaling section: added a quick-access option to freewrite from the journal home screen, proposed categories (motivation, stress, negative emotions, social media, self-care, mental health) to make repeat prompts easier to relocate, and added the option to title entries</li>
+      <li>Ran usability testing sessions through TestFlight with real users, gathered feedback, and iterated on the designs before final handoff</li>
+      <li>Presented the audit and redesign to SportSpark's international development team and worked with them directly on implementation</li>
     </ul>
     <div class="media-box">
-      <span class="placeholder-label">[ wireframes / iteration snapshots ]</span>
+      <!-- UPDATE: icon system exploration + before/after onboarding and survey screens -->
+      <span class="placeholder-label">[ icon system exploration + before/after screens ]</span>
     </div>
 
     <h2 id="solution">Solution</h2>
-    <p>[ UPDATE: the final design — what it does and why it works. ]</p>
+    <p>
+      The final redesign brought the app into one cohesive system: a custom
+      icon set built specifically for SportSpark's tone, onboarding that
+      explains itself before asking anything of the user, check-ins built
+      on a validated survey format instead of ambiguous scales, navigation
+      icons that map to what they actually do, and a journaling space
+      flexible enough for a quick note or a longer, prompted reflection.
+      Based on usability feedback, I also proposed a new journal type for
+      athletes who wanted a place to log takeaways from therapy sessions.
+      That need came directly out of testing, not the original brief.
+    </p>
     <div class="media-box">
-      <span class="placeholder-label">[ final UI screens / prototype clip ]</span>
+      <!-- UPDATE: final polished screens / prototype clip -->
+      <span class="placeholder-label">[ final UI screens: onboarding, icons, surveys, journal ]</span>
     </div>
 
     <h2 id="outcomes">Outcomes</h2>
-    <p>[ UPDATE: impact — metrics, feedback, what shipped or what you'd propose next. ]</p>
+    <p>
+      The redesign shipped to the App Store, where real college athletes
+      downloaded and used it. That was genuinely one of the highlights of
+      this project, seeing a product I'd audited and redesigned end-to-end
+      in actual users' hands. The app has since come down while SportSpark's
+      founders take a break from active development, but the redesign is
+      complete and the Figma files remain ready to pick back up whenever
+      the team returns to it.
+    </p>
 
     <h2 id="reflection">Reflection</h2>
-    <p>[ UPDATE: what you learned, what you'd do differently, how it shaped your
-      thinking as a designer. ]</p>
+    <p>
+      This project pushed me to back up design opinions with evidence
+      rather than taste alone, especially working with a remote,
+      international dev team where I couldn't rely on being in the room to
+      make the case in person. Citing research made it much easier to get
+      alignment on recommendations. It also reinforced how much small, cumulative
+      friction matters in an app someone opens during a hard moment: the
+      individually "minor" issues in the original build were, together,
+      the whole experience. If I revisited it, I'd want to define the icon
+      system earlier in the process, since it ended up touching nearly
+      every other screen I redesigned.
+    </p>
 
   </div>
 </div>
 
 <div class="project-nav-footer">
   <a href="../index.html#work" class="btn">← back to all work</a>
-  <!-- UPDATE: link to the next case study once you have more than one -->
   <a href="project-template.html" class="btn btn-primary">next project →</a>
 </div>
 
