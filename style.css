@@ -506,8 +506,6 @@ footer .footer-links {
 
 .media-box {
   aspect-ratio: 16 / 9;
-  border: 2px solid var(--ink);
-  background: var(--blue-pale);
   display: flex;
   align-items: center;
   justify-content: center;
