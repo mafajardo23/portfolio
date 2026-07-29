@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AssemblyViz — Maria Fajardo</title>
+<link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+<div class="stripe-bar"></div>
+
+<nav class="site-nav">
+  <a href="../index.html#home" class="logo">maria <span>fajardo</span></a>
+  <div class="nav-links">
+    <a href="../index.html#work" class="project-nav-back">← back to work</a>
+    <a href="../index.html#skills">skills</a>
+    <a href="../index.html#about">about</a>
+    <a href="../index.html#resume">resume</a>
+  </div>
+</nav>
+
+<!-- ============ PROJECT HERO ============ -->
+<section class="project-hero">
+  <p class="eyebrow">Case Study · Frontend Development · UX Design · Spring 2026</p>
+  <h1>AssemblyViz</h1>
+  <p class="project-summary">
+    A browser-based assembly language visualizer that replaces Davidson College's
+    outdated SimHYMN desktop tool, giving Computer Organization students a modern,
+    interactive way to step through HYMN and RISC-V code and watch registers and
+    memory update in real time.
+  </p>
+
+  <div class="project-meta-row">
+    <div class="meta-item">
+      <h4>Role</h4>
+      <p>Product Owner &amp; Frontend Developer</p>
+    </div>
+    <div class="meta-item">
+      <h4>Timeline</h4>
+      <p>Spring 2026</p>
+    </div>
+    <div class="meta-item">
+      <h4>Team</h4>
+      <p>4 — Nikita Aleksii (Scrum Master), Robby Votta, Yurdanur Yolcu, Maria Fajardo</p>
+    </div>
+    <div class="meta-item">
+      <h4>Tools</h4>
+      <p>React · TypeScript · Vite · Python · FastAPI · Figma · Git</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HERO MEDIA ============ -->
+<div class="project-media">
+  <div class="media-box">
+    <span class="placeholder-label">[ screenshot of AssemblyViz running a HYMN or RISC-V program — results highlighted, registers visible ]</span>
+  </div>
+</div>
+
+<!-- ============ BODY ============ -->
+<div class="project-body">
+
+  <nav class="project-toc">
+    <a href="#overview">Overview</a>
+    <a href="#problem">Problem</a>
+    <a href="#process">Process</a>
+    <a href="#solution">Solution</a>
+    <a href="#outcomes">Outcomes</a>
+    <a href="#reflection">Reflection</a>
+  </nav>
+
+  <div class="project-content">
+
+    <h2 id="overview">Overview</h2>
+    <p>
+      AssemblyViz is a full-stack web application built for Davidson College's
+      Computer Organization course (CSC 250). The project was commissioned by
+      Dr. Hammurabi Mendes, who wanted a more accessible, visually engaging
+      replacement for SimHYMN — the desktop simulator his students had been
+      struggling with for years. The application supports two instruction set
+      architectures: HYMN, a minimal 8-bit educational CPU, and RISC-V (RV32I),
+      a real-world 32-bit architecture used in modern hardware. Students can write
+      assembly code, assemble it with one click, and step through execution
+      one instruction at a time, watching the CPU state evolve in real time.
+    </p>
+    <p>
+      As Product Owner, I was responsible for translating Dr. Mendes's vision
+      into concrete user requirements, prioritizing the backlog across three Agile
+      sprints, and ensuring the team stayed aligned on what we were building and
+      why. As a developer, I led the frontend — designing and building the React
+      and TypeScript interface from scratch, and integrating it with the Python
+      FastAPI backend through a REST API.
+    </p>
+
+    <h2 id="problem">Problem</h2>
+    <p>
+      SimHYMN, the existing tool, had three core problems. First, it was a desktop
+      application that required installation — Mac users in particular reported
+      repeated permission errors that blocked them from running it at all. Second,
+      its interface was visually outdated and confusing, creating what Dr. Mendes
+      described as a psychological barrier for students new to assembly programming.
+      Third, it lacked modern debugging features: there was no memory history, no
+      step-back navigation, and no clear error messages when code failed to parse.
+    </p>
+    <p>
+      To validate these pain points, we interviewed past CSC 250 students before
+      designing anything. The interviews confirmed that most students found SimHYMN
+      hard to read, hard to install, and hard to debug with. These findings directly
+      shaped our three design priorities: browser-based (no installation), visually
+      clear (clean three-panel layout), and debuggable (step forward, step back,
+      memory change highlighting, line-specific errors).
+    </p>
+    <div class="media-box">
+      <span class="placeholder-label">[ screenshot of SimHYMN vs AssemblyViz side by side, or user research notes ]</span>
+    </div>
+
+    <h2 id="process">Process</h2>
+    <p>
+      We followed an Agile Scrum framework across three sprints. Sprint 1 focused
+      on architecture and design — we finalized the UI in Figma and validated it
+      with Dr. Mendes before writing any functional code. Sprint 2 was our heaviest
+      implementation sprint, building and testing both the HYMN and RISC-V backends
+      in Python. Sprint 3 was where I took the lead: migrating the prototype frontend
+      from plain HTML and JavaScript into a full React and TypeScript application,
+      then connecting it to the backend via a REST API.
+    </p>
+    <ul>
+      <li>Conducted user interviews with past CSC 250 students to identify pain points with SimHYMN and map key tasks the interface needed to support</li>
+      <li>Designed three iterations of the UI in Figma, validated each with Dr. Mendes before implementation</li>
+      <li>Built an initial HTML/CSS/JavaScript prototype to test layout and interaction patterns before committing to React</li>
+      <li>Migrated the prototype to React and TypeScript — chose React specifically to manage the complexity of keeping four panels (code editor, results, memory, registers) synchronized on every step</li>
+      <li>Implemented a four-endpoint REST API integration using <code>fetch()</code> with <code>async/await</code>, handling both HYMN and RISC-V simulation flows</li>
+      <li>Added a step-back debugger feature using a client-side history stack — each forward step pushes a snapshot to the stack, Back pops it instantly without a backend call</li>
+      <li>Implemented resizable panels, draggable dividers, and Figma-sourced SVG icons during final polish sprint</li>
+    </ul>
+    <div class="media-box">
+      <span class="placeholder-label">[ Figma wireframes or iteration snapshots ]</span>
+    </div>
+
+    <h2 id="solution">Solution</h2>
+    <p>
+      The final product is a browser-based simulator that requires no installation.
+      The three-panel layout — code editor on the left, assembled instructions in
+      the center, registers on the right — was designed to match the mental model
+      students already have of how a CPU works. The memory panel is accessible via
+      a tab toggle to keep the default view uncluttered.
+    </p>
+    <p>
+      Key frontend features I built and own:
+    </p>
+    <ul>
+      <li><strong>Single source of truth architecture</strong> — all simulation state lives in <code>App.tsx</code> and flows down to panels as props, so all four panels always stay in sync after every step</li>
+      <li><strong>Step-back debugger</strong> — entirely client-side, using a history stack. Instant, no network latency, works for both HYMN and RISC-V</li>
+      <li><strong>Memory change highlighting</strong> — cells flash yellow when a write instruction modifies them, using a CSS keyframe animation triggered by a per-cell <code>isChanged</code> flag</li>
+      <li><strong>Dual ISA support in one interface</strong> — a single toggle switches between HYMN and RISC-V, resetting state and routing requests to the correct backend endpoints</li>
+      <li><strong>Play mode with adjustable speed</strong> — a recursive <code>setTimeout</code> loop that waits for each API response before scheduling the next step, preventing race conditions</li>
+      <li><strong>Resizable output panel and draggable divider</strong> — built with <code>onMouseDown</code> drag handlers and <code>useState</code> for panel width, no external library needed</li>
+    </ul>
+    <div class="media-box">
+      <span class="placeholder-label">[ final UI screenshots — editor view, memory panel, RISC-V mode ]</span>
+    </div>
+
+    <h2 id="outcomes">Outcomes</h2>
+    <p>
+      AssemblyViz was presented at Davidson College's Research Symposium in Spring
+      2026. The simulator successfully replicates the full HYMN instruction set
+      (validated against SimHYMN using four test programs: a sum calculator,
+      a multiplier, a prime number printer, and a self-modifying virus program)
+      and the full RV32I RISC-V base integer instruction set (validated using a
+      merge sort implementation). Dr. Mendes expressed satisfaction with the
+      interface and functionality throughout development and indicated intent to
+      use the tool in future CSC 250 semesters.
+    </p>
+    <p>
+      Performance benchmarking of the RISC-V simulator showed expected O(N) scaling
+      with program length due to the replay-from-scratch execution strategy — a
+      known tradeoff we documented and presented as part of the research poster.
+    </p>
+
+    <h2 id="reflection">Reflection</h2>
+    <p>
+      This project pushed me to grow in two directions at once — as a developer
+      and as a product owner. On the development side, I learned React and TypeScript
+      in the context of a real production codebase, not a tutorial. Decisions like
+      lifting state to <code>App.tsx</code>, using <code>useRef</code> instead of
+      <code>useState</code> for the play loop, and threading explicit state through
+      <code>StepParams</code> instead of reading from React state directly — these
+      weren't patterns I learned from a course, they were solutions I had to figure
+      out when things broke.
+    </p>
+    <p>
+      On the product side, owning the backlog taught me that good prioritization
+      is about protecting the team as much as it is about deciding what to build.
+      The decision to focus on a working backend before touching the frontend — even
+      though it delayed the UI — was one I advocated for and I think it made the
+      final integration much cleaner. If I were to do it again, I'd push for the
+      <code>.gitignore</code> and branch discipline to be set up from day one.
+    </p>
+    <p>
+      AssemblyViz also confirmed for me that I want to work at the intersection of
+      engineering and design — not just as a handoff point between the two, but as
+      someone who can own both ends and make decisions that account for the full
+      picture.
+    </p>
+
+  </div>
+</div>
+
+<div class="project-nav-footer">
+  <a href="../index.html#work" class="btn">← back to all work</a>
+  <a href="project-template.html" class="btn btn-primary">next project →</a>
+</div>
+
+</body>
+</html>
