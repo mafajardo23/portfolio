@@ -149,11 +149,10 @@ section {
 .hero {
   padding-top: 70px;
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 30px;
+  grid-template-columns: 1.2fr 0.8fr;  /* was: 1.1fr 0.9fr — gives text a bit more room, pulls image column in */
+  gap: 24px;                           /* was: 30px */
   align-items: center;
 }
-
 .hero-text p {
   font-size: 1.15rem;
   margin: 0 0 22px;
